@@ -1,0 +1,17 @@
+sleep 60 & && sleep 60 &
+pwd && pwd
+pwd && pwd
+pwd && pwd
+pwd
+pwd
+pwd && pwd
+ls
+pwd && pwd
+ls; pwd
+ls
+ps
+sleep 1
+sleep 60 &
+ps
+kill 13099
+kill 13099

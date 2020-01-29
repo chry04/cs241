@@ -1,0 +1,14 @@
+cd
+cd novae
+cd yirongc2
+cd /home/yirongc2
+!history
+cd /home/yirongc2/yirongc2/shell
+#4
+!history
+!c
+echo hvilnsdfo;m;;en  noa;v;onv;anvn bvao;bvo&
+echo hello world
+echo iaewoqbnfciale c uibeca lwjekiub &
+ps
+exit

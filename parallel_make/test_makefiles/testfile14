@@ -1,0 +1,105 @@
+LG: AF F5 AZ QE RN
+	echo "Starting node LG"
+	sleep 0.47257040328369415
+	echo "Finished node LG"
+
+AF: QE Y2 F5 RN
+	echo "Starting node AF"
+	sleep 0.4737078421058446
+	echo "Finished node AF"
+
+0I: HY OR R6 L9 ST
+	echo "Starting node 0I"
+	sleep 0.05760451355143359
+	echo "Finished node 0I"
+
+QE: HY F5 GY TV RN
+	echo "Starting node QE"
+	sleep 0.028081308700027507
+	echo "Finished node QE"
+
+GY: CJ OR L9 CQ TV
+	echo "Starting node GY"
+	sleep 0.19045382127377697
+	echo "Finished node GY"
+
+3L: DN OR R6 AZ ST
+	echo "Starting node 3L"
+	sleep 0.27424307658690744
+	echo "Finished node 3L"
+
+CJ: RN F5 DN TV
+	echo "Starting node CJ"
+	sleep 0.3870410951502877
+	echo "Finished node CJ"
+
+ST: HY W0 F5 CQ RN
+	echo "Starting node ST"
+	sleep 0.3491367875420522
+	echo "Finished node ST"
+
+OR: HY W0 DN F5 TV
+	echo "Starting node OR"
+	sleep 0.3558576807923605
+	echo "Finished node OR"
+
+HY: DN R6 L9 TV
+	echo "Starting node HY"
+	sleep 0.2039439153467934
+	echo "Finished node HY"
+
+R6: F5 L9 CQ AZ RN
+	echo "Starting node R6"
+	sleep 0.01981326325681232
+	echo "Finished node R6"
+
+F5: Y2 W0 DN L9 CQ
+	echo "Starting node F5"
+	sleep 0.1122791421695371
+	echo "Finished node F5"
+
+DN: TV Y2 W0 AZ
+	echo "Starting node DN"
+	sleep 0.20389277530589645
+	echo "Finished node DN"
+
+W0: TV Y2 CQ RN
+	echo "Starting node W0"
+	sleep 0.408494377578105
+	echo "Finished node W0"
+
+RN: Y2 L9 CQ AZ
+	echo "Starting node RN"
+	sleep 0.4657078793180184
+	echo "Finished node RN"
+
+Y2: 
+	echo "Starting node Y2"
+	sleep 0.4788532579089982
+	echo "Finished node Y2"
+
+CQ: 
+	echo "Starting node CQ"
+	sleep 0.1399326251728772
+	echo "Finished node CQ"
+
+TV: 
+	echo "Starting node TV"
+	sleep 0.26544866376667164
+	echo "Finished node TV"
+
+L9: 
+	echo "Starting node L9"
+	sleep 0.2593892199755503
+	echo "Finished node L9"
+
+AZ: 
+	echo "Starting node AZ"
+	sleep 0.25448385453149486
+	echo "Finished node AZ"
+
+all: 0I LG 3L
+	echo "Starting node all"
+	sleep 0.2633607765612585
+	echo "Finished node all"
+

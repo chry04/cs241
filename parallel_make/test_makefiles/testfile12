@@ -1,0 +1,47 @@
+#make sure to not run file rules if the flowchart doesn't tell you to
+
+all: examples/a
+	echo "This line should always be shown."
+
+examples/a: examples/b examples/c
+	echo "a depend on b and c"
+
+examples/b: examples/d examples/g
+	echo "b depend on d and g"
+
+examples/c: examples/d
+	echo "c depend on d"
+
+examples/d: examples/e
+	echo "d depend on e"
+
+examples/e: examples/f
+	echo "e depend on f"
+
+examples/f:
+	echo "f has no dependency"
+
+examples/g: examples/f
+	echo "g depend f"
+
+parmake.c:
+	echo "This should never print because parmake.c is a file rule with no"
+	echo "dependencies in this Makefile"
+
+reset:
+	rm -f examples/a
+	rm -f examples/b
+	rm -f examples/c
+	rm -f examples/d
+	rm -f examples/e
+	rm -f examples/f
+	rm -f examples/g
+	touch examples/a -d "01/01/2012"
+	touch examples/b -d "01/01/2012"
+	touch examples/c -d "01/01/2012"
+	touch examples/d -d "08/01/2012"
+	touch examples/e -d "01/01/2012"
+	touch examples/f -d "09/01/2012"
+	touch examples/g -d "01/01/2012"
+	echo "reset complete"
+
